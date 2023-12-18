@@ -1,0 +1,52 @@
+.Welcome {
+  height: 100%;
+  min-height: 100vh;
+  background-color: rgba(0, 0, 0, 0.098);
+}
+.Welcome .animation {
+  max-height: 100px;
+  width: min-content;
+  
+}
+.Welcome .row {
+    display: flex;
+    align-items: center; 
+    justify-content: space-around;
+}
+.Welcome .signin{
+    position: absolute;
+    top:400px;
+    right:230px;
+    background-color:black;
+    color:white;
+    height:60px;
+    border-radius: 30px;
+    width:250px;
+    font-size: larger;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+}
+.Welcome .signin:hover{
+  background-color:rgb(39, 39, 39);
+  color:#f6ff00;
+  scale: calc(1.03);
+}
+.Welcome .signup{
+    position: absolute;
+    top:500px;
+    right:230px;
+    background-color:black;
+    color:white;
+    height:60px;
+    border-radius: 30px;
+    width:250px;
+    font-size: larger;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    
+}
+.Welcome .signup:hover{
+  background-color:rgb(39, 39, 39);
+  color:#f6ff00;
+  scale: calc(1.03);
+}

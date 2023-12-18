@@ -1,0 +1,138 @@
+/*custom font*/
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+
+.Signup {
+  height: 100%;
+  min-height: 100vh;
+}
+
+.Signup body {
+  font-family: montserrat, arial, verdana;
+}
+/*form styles*/
+.Signup #msform {
+  width: 400px;
+  margin: 50px auto;
+  text-align: center;
+  position: relative;
+}
+.Signup #msform fieldset {
+  background: white;
+  border: 0 none;
+  border-radius: 3px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  padding: 20px 30px;
+  box-sizing: border-box;
+  width: 80%;
+  margin: 0 10%;
+
+  /*stacking fieldsets above each other*/
+  position: relative;
+}
+/*Hide all except first fieldset*/
+.Signup #msform fieldset:not(:first-of-type) {
+  display: none;
+}
+/*inputs*/
+.Signup #msform input,
+#msform textarea {
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  margin-bottom: 10px;
+  width: 100%;
+  box-sizing: border-box;
+  font-family: montserrat;
+  color: #2c3e50;
+  font-size: 15px;
+}
+/*buttons*/
+.Signup #msform .action-button {
+  width: 100px;
+  background: #000000;
+  font-weight: bold;
+  color: white;
+  border: 0 none;
+  border-radius: 1px;
+  cursor: pointer;
+  padding: 10px;
+  margin: 10px 5px;
+  text-decoration: none;
+  font-size: 14px;
+}
+.Signup #msform .action-button:hover,
+#msform .action-button:focus .action-button:active{
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    scale:calc(1.05);
+}
+/*headings*/
+.Signup .fs-title {
+  font-size: 25px;
+  text-transform: uppercase;
+  color: #000000;
+  margin-bottom: 10px;
+}
+.Signup .fs-subtitle {
+  font-weight: normal;
+  font-size: 15px;
+  color: #666;
+  margin-bottom: 20px;
+}
+/*progressbar*/
+.Signup #progressbar {
+  margin-bottom: 30px;
+  overflow: hidden;
+  /*CSS counters to number the steps*/
+  counter-reset: step;
+}
+.Signup #progressbar li {
+  list-style-type: none;
+  color: rgb(0, 0, 0);
+  text-transform: uppercase;
+  font-size: 9px;
+  width: 33.33%;
+  float: left;
+  position: relative;
+}
+.Signup #progressbar li:before {
+  content: counter(step);
+  counter-increment: step;
+  width: 20px;
+  line-height: 20px;
+  display: block;
+  font-size: 10px;
+  color: #ffffff;
+  background: rgb(0, 0, 0);
+  border-radius: 3px;
+  margin: 0 auto 5px auto;
+}
+/*progressbar connectors*/
+.Signup #progressbar li:after {
+  content: "";
+  width: 100%;
+  height: 2px;
+  background: rgb(0, 0, 0);
+  position: absolute;
+  left: -50%;
+  top: 9px;
+  z-index: -1; /*put it behind the numbers*/
+}
+.Signup #progressbar li:first-child:after {
+  /*connector not needed before the first step*/
+  content: none;
+}
+/*marking active/completed steps green*/
+/*The number of the step and the connector before it = green*/
+.Signup #progressbar li.active:before,
+#progressbar li.active:after {
+  background: #27ae60;
+  color: white;
+}
+.Signup .image{
+    border: 2px solid rgba(0, 0, 0, 0.296);
+    border-style: dashed;
+    
+    align-items: center;
+}

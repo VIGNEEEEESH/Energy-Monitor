@@ -1,0 +1,41 @@
+.Home {
+  min-height: 100vh;
+  padding: 50px;
+}
+
+.Home .statistics-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.Home .linechart {
+  height: 70vh;
+  width: 125vh;
+}
+
+.Home .rooms-row {
+  background-color: aqua;
+  padding: 20px;
+}
+
+.Home .card {
+  margin-top: 20px;
+}
+
+
+
+/* Media Query for Mobile View */
+@media only screen and (max-width: 767px) {
+  .Home .statistics-row {
+    flex-direction: column; /* Stack elements vertically in mobile view */
+  }
+
+  .Home .linechart {
+    width: 100%; /* Make the line chart full width in mobile view */
+  }
+
+  .Home .rooms-row,
+  .Home .card {
+    width: 100%; /* Make cards and rooms row full width in mobile view */
+  }
+}

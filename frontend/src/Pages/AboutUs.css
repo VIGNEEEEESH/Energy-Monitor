@@ -1,0 +1,102 @@
+/* AboutUs.css */
+
+.AboutUs .about-us-container {
+
+    background-color: #f5f5f5;
+    padding: 40px;
+    text-align: center;
+    margin: 20px auto;
+    max-width: 1200px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Hover effect for the main container */
+  .AboutUs .about-us-container:hover {
+    background-color: #6aa6b0;
+  }
+  
+  /* About Us content */
+  .AboutUs .about-us-content {
+    display: flex;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    margin: 20px;
+  }
+  
+  /* Text content */
+  .AboutUs .content-text {
+    flex: 1;
+    padding: 30px;
+  }
+  
+  /* Image */
+  .AboutUs .content-image img {
+    max-width: 100%;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+  }
+  
+  /* Hover effect for the image */
+  .AboutUs .content-image img:hover {
+    transform: scale(1.1);
+  }
+  
+  /* Heading */
+  .AboutUs h1 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 20px;
+   
+  }
+  
+  /* Hover effect for the heading */
+  
+  
+  /* Paragraphs */
+  .AboutUs p {
+    font-size: 20px;
+    color: #000000;
+    line-height: 1.6;
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .AboutUs .carousel-container {
+    background-color: #544d4d62;
+    padding: 20px;
+    margin: 30px auto;
+    max-width: 1200px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+  }
+  
+  .AboutUs .carousel-container:hover {
+    background-color: #6aa6b0;
+  }
+  
+  .AboutUs .c-text:hover {
+    background-color: #f0f0f0;
+  }
+  
+  .AboutUs .Heading {
+    text-align: center;
+    font-size: 32px;
+    font-weight: bold;
+    margin-top: 20px;
+    transition: color 0.3s ease;
+  }
+  
+  
+  
+  .AboutUs .carousel-container:hover .c-text {
+    background-color: #6aa6b0;
+  }
+  
+  .AboutUs .carousel-container:hover .Heading {
+    color: #ff6600;
+  }

@@ -1,0 +1,86 @@
+/*custom font*/
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+
+.AdminSignUp {
+  height: 100%;
+  min-height: 100vh;
+  
+}
+
+.AdminSignUp body {
+  font-family: montserrat, arial, verdana;
+}
+/*form styles*/
+.AdminSignUp #msform {
+  width: 400px;
+  margin: 50px auto;
+  text-align: center;
+  position: relative;
+}
+.AdminSignUp #msform fieldset {
+  background: white;
+  border: 0 none;
+  border-radius: 3px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  padding: 20px 30px;
+  box-sizing: border-box;
+  width: 80%;
+  margin: 0 10%;
+
+  position: relative;
+}
+/*Hide all except first fieldset*/
+.AdminSignUp #msform fieldset:not(:first-of-type) {
+  display: none;
+}
+/*inputs*/
+.AdminSignUp #msform input,
+#msform textarea {
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  margin-bottom: 10px;
+  width: 100%;
+  box-sizing: border-box;
+  font-family: montserrat;
+  color: #2c3e50;
+  font-size: 15px;
+}
+/*buttons*/
+.AdminSignUp #msform .action-button {
+  width: 100px;
+  background: #000000;
+  font-weight: bold;
+  color: white;
+  border: 0 none;
+  border-radius: 1px;
+  cursor: pointer;
+  padding: 10px;
+  margin: 10px 5px;
+  text-decoration: none;
+  font-size: 14px;
+}
+.AdminSignUp #msform .action-button:hover,
+#msform .action-button:focus {
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    scale:calc(1.05);
+    
+}
+
+
+/*headings*/
+.AdminSignUp .fs-title {
+  font-size: 30px;
+
+  text-transform: uppercase;
+  color: #000000;
+  margin-bottom: 10px;
+}
+.AdminSignUp .fs-subtitle {
+  font-weight: normal;
+  font-size: 15px;
+  color: #666;
+  margin-bottom: 20px;
+}
